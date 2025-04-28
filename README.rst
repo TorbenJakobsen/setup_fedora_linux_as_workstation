@@ -17,9 +17,9 @@ is a good place to start.
 Initial Housekeeping
 -------------------
 
-Use `dnf5` instead of `dnf` (https://www.tecmint.com/dnf-vs-dnf5/)
+!!! Use `dnf5` instead of `dnf` (https://www.tecmint.com/dnf-vs-dnf5/)
 
-`dnf5` command are available here: https://dnf5.readthedocs.io/en/latest/commands/index.html
+Documentation on `dnf5` commands are available here: https://dnf5.readthedocs.io/en/latest/commands/index.html
 
 
 .. code:: bash
