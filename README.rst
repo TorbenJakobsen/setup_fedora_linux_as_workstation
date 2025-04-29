@@ -1,3 +1,6 @@
+
+.. _Cosmic: https://system76.com/cosmic/
+
 #####################################
   Setup Fedora Linux as Workstation
 #####################################
@@ -6,8 +9,8 @@ Documents my personal setup.
 
 A better way is to use Ansible, and I will get there eventually.
 
-| Currently I am using Fedora 42 with Cosmic desktop. 
-| **Note**: Cosmic is currently in alfa, but for my use performs fast with only minor hiccups.
+| Currently I am using Fedora 42 with Cosmic_ desktop. 
+| **Note**: Cosmic_ is currently (2025-04-29) in alfa 7, but for my use performs fast with only minor hiccups.
 
 If you want to run in a container then 
 https://github.com/geerlingguy/docker-fedora42-ansible
@@ -68,4 +71,18 @@ https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-dis
 The general guide is here:
 https://code.visualstudio.com/docs/setup/linux
 
+Install :code:`code` Extensions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+| :code:`ms-python.python`
+| :code:`ms-python.vscode-pylance`
+
+Install Docker
+--------------
+
+Follow
+https://docs.docker.com/engine/install/fedora/
+
+The general installation:
+https://docs.docker.com/engine/install/
 
