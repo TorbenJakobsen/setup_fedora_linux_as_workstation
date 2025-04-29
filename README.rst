@@ -5,6 +5,9 @@
   Setup Fedora Linux as Workstation
 #####################################
 
+Introduction
+------------
+
 Documents my personal setup.
 
 A better way is to use Ansible, and I will get there eventually.
@@ -36,6 +39,20 @@ Make sure you have a network connection.
   sudo dnf5 -y install python3-pip sudo which python3-libdnf5
 
 The `dnf5 makecache` command creates and downloads metadata for enabled repositories.
+
+install :code:`ansible`
+-----------------------
+
+
+https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html
+
+install the full package:
+
+.. code:: bash
+
+  sudo dnf5 install ansible
+
+It is also possible to install just the core and modules of your choosing.
 
 Install :code:`gìt`
 -------------------
