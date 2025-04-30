@@ -74,6 +74,8 @@ Convenience script
 
 .. code:: bash
 
+  # pull_repos.sh
+  
   echo ":: containerize-fastapi-application ::"
   cd containerize-fastapi-application
   git pull
