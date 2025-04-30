@@ -70,6 +70,30 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generati
   git config --global user.email "you@example.com"
   git config --global user.name "Your Name"
 
+Convenience script 
+
+.. code:: bash
+
+  echo ":: containerize-fastapi-application ::"
+  cd containerize-fastapi-application
+  git pull
+  cd - > /dev/null
+
+  echo ":: dual_booting_using_windows_boot_manager ::"
+  cd dual_booting_using_windows_boot_manager
+  git pull
+  cd - > /dev/null
+
+  echo ":: run_sap_as_a_container ::"
+  cd run_sap_as_a_container
+  git pull
+  cd - > /dev/null
+
+  echo ":: setup_fedora_linux_as_workstation ::"
+  cd setup_fedora_linux_as_workstation
+  git pull
+  cd - > /dev/null
+
 Install Visual Studio Code
 --------------------------
 
@@ -97,7 +121,7 @@ Install :code:`code` Extensions
 Install Docker
 --------------
 
-Follow
+Follow:
 https://docs.docker.com/engine/install/fedora/
 
 The general installation:
