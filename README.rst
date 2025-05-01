@@ -19,15 +19,27 @@ If you want to run in a container then
 https://github.com/geerlingguy/docker-fedora42-ansible
 is a good place to start.
 
-
 Initial Housekeeping
 --------------------
 
-!!! Use `dnf5` instead of `dnf` (https://www.tecmint.com/dnf-vs-dnf5/)
+Package manager
+~~~~~~~~~~~~~~~~
+
+Use `dnf5` instead of `dnf` (https://www.tecmint.com/dnf-vs-dnf5/)
+as it is a more modern and faster inplementation of :code:`dnf`.
 
 Documentation on `dnf5` commands are available here: https://dnf5.readthedocs.io/en/latest/commands/index.html
 
+Initial update
+~~~~~~~~~~~~~~
+
 Make sure you have a network connection.
+
+After the build of the installation media many chnages will likely
+have been added to your system.
+So a full update is in place.
+Note: If you are used to :code:`apt` and other package managers; 
+:code:`dnf5 update` and :code:`dnf5 upgrade` does the same update.
 
 .. code:: bash
 
@@ -36,9 +48,26 @@ Make sure you have a network connection.
 .. code:: bash
 
   sudo dnf5 makecache
-  sudo dnf5 -y install python3-pip sudo which python3-libdnf5
 
 The `dnf5 makecache` command creates and downloads metadata for enabled repositories.
+
+You can check available update packages beforehand:
+
+.. code:: bash
+
+  dnf5 check-update
+
+Depending on your updates you should restart the system.
+Strictly you could probaly get away with restarting some sub-systems,
+but it will likely be faster just restarting instead of micro-managing services and daemons.
+
+.. code:: bash
+
+  sudo dnf5 -y dnf-utils
+
+  dnf5 needs-restarting
+
+https://www.mankier.com/1/needs-restarting
 
 install :code:`ansible`
 -----------------------
