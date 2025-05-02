@@ -153,3 +153,9 @@ https://docs.docker.com/engine/install/fedora/
 The general installation:
 https://docs.docker.com/engine/install/
 
+Setup `zsh` as default shell
+----------------------------
+
+Configure omz
+
+Configure shell prompt
