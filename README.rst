@@ -33,7 +33,9 @@ Documentation on `dnf5` commands are available here: https://dnf5.readthedocs.io
 Initial update
 ~~~~~~~~~~~~~~
 
-Make sure you have a network connection.
+.. note:: 
+
+  Make sure you have a network connection.
 
 After the build of the installation media many chnages will likely
 have been added to your system.
@@ -83,6 +85,11 @@ install the full package:
 
 It is also possible to install just the core and modules of your choosing.
 
+:code:`ssh`` Keys
+-----------------
+
+To access :ode:`git` you will need a public key.
+
 Install :code:`gìt`
 -------------------
 
@@ -93,37 +100,25 @@ Install :code:`gìt`
 Follow:
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
-
 .. code:: bash
 
   git config --global user.email "you@example.com"
   git config --global user.name "Your Name"
+  git config --global init.defaultBranch "main"
 
-Convenience script 
+Depending on your preferences. 
+Personally I like :code:`code` to open. You may prefer :code:`vim`.
 
 .. code:: bash
 
-  # pull_repos.sh
-  
-  echo ":: containerize-fastapi-application ::"
-  cd containerize-fastapi-application
-  git pull
-  cd - > /dev/null
+  git config --global core.editor "code --wait"
 
-  echo ":: dual_booting_using_windows_boot_manager ::"
-  cd dual_booting_using_windows_boot_manager
-  git pull
-  cd - > /dev/null
+Optionally install public key in GitHub
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  echo ":: run_sap_as_a_container ::"
-  cd run_sap_as_a_container
-  git pull
-  cd - > /dev/null
+I use GitHub and other services and have other servers that I want to access.
 
-  echo ":: setup_fedora_linux_as_workstation ::"
-  cd setup_fedora_linux_as_workstation
-  git pull
-  cd - > /dev/null
+To install public key in GitHub follow ...
 
 Install Visual Studio Code
 --------------------------
