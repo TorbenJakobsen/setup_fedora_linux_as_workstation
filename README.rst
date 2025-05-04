@@ -107,7 +107,7 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generati
   git config --global init.defaultBranch "main"
 
 Depending on your preferences. 
-Personally I like :code:`code` to open. You may prefer :code:`vim`.
+Personally I like :code:`code` to open. You may prefer :code:`vim` or the default.
 
 .. code:: bash
 
@@ -141,8 +141,76 @@ https://code.visualstudio.com/docs/setup/linux
 Install :code:`code` Extensions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+You can use the command line to list and install/uninstall extensions.
+
+Examples:
+
+.. code:: bash 
+
+  code --list-extensions
+  code --install-extension redhat.vscode-yaml
+  code --uninstall-extension timonwong.shellcheck
+
+My personal preferences are:
+
 | :code:`ms-python.python`
 | :code:`ms-python.vscode-pylance`
+
+.. code:: text
+
+  aaron-bond.better-comments
+  davidanson.vscode-markdownlint
+  docker.docker
+  donjayamanne.python-environment-manager
+  dracula-theme.theme-dracula
+  github.codespaces
+  github.vscode-github-actions
+  ibm.ibm-developer
+  ibmconsulting.ica
+  inferrinizzard.prettier-sql-vscode
+  jakebecker.elixir-ls
+  lextudio.iis
+  lextudio.restructuredtext-pack
+  mechatroner.rainbow-csv
+  ms-azuretools.vscode-docker
+  ms-python.black-formatter
+  ms-python.debugpy
+  ms-python.isort
+  ms-python.python
+  ms-python.vscode-pylance
+  ms-toolsai.jupyter
+  ms-toolsai.jupyter-keymap
+  ms-toolsai.jupyter-renderers
+  ms-toolsai.vscode-jupyter-cell-tags
+  ms-toolsai.vscode-jupyter-slideshow
+  ms-vscode-remote.remote-containers
+  ms-vscode-remote.remote-ssh
+  ms-vscode-remote.remote-ssh-edit
+  ms-vscode.makefile-tools
+  ms-vscode.remote-explorer
+  njpwerner.autodocstring
+  quarto.quarto
+  redhat.ansible
+  redhat.vscode-yaml
+  sapos.yeoman-ui
+  saposs.app-studio-remote-access
+  saposs.app-studio-toolkit
+  saposs.sap-guided-answers-extension
+  saposs.vscode-ui5-language-assistant
+  saposs.xml-toolkit
+  sapse.sap-ux-annotation-modeler-extension
+  sapse.sap-ux-application-modeler-extension
+  sapse.sap-ux-fiori-tools-extension-pack
+  sapse.sap-ux-help-extension
+  sapse.sap-ux-service-modeler-extension
+  shuworks.vscode-table-formatter
+  sonarsource.sonarlint-vscode
+  swyddfa.esbonio
+  tamasfe.even-better-toml
+  trond-snekvik.simple-rst
+  wesbos.theme-cobalt2
+  wholroyd.jinja
+
 
 Install Docker
 --------------
@@ -159,3 +227,8 @@ Setup `zsh` as default shell
 Configure omz
 
 Configure shell prompt
+
+Other packages to consider
+--------------------------
+
+* drawio
