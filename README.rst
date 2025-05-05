@@ -231,4 +231,11 @@ Configure shell prompt
 Other packages to consider
 --------------------------
 
-* drawio
+* draw.io
+* tldr (tealdeer)
+
+.. code:: bash 
+
+  sudo dnf5 install tealdeer
+
+ 
