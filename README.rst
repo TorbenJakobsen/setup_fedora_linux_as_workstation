@@ -1,4 +1,3 @@
-
 .. _Cosmic: https://system76.com/cosmic/
 
 #####################################
@@ -37,7 +36,7 @@ Initial update
 
   Make sure you have a network connection.
 
-After the build of the installation media many chnages will likely
+After the build of the installation media many cnanges will likely
 have been added to your system.
 So a full update is in place.
 Note: If you are used to :code:`apt` and other package managers; 
