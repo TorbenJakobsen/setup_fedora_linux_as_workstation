@@ -1,11 +1,11 @@
 .. _Cosmic: https://system76.com/cosmic/
 
-#####################################
-  Setup Fedora Linux as Workstation
-#####################################
+######################################
+  Set up Fedora Linux as Workstation
+######################################
 
 Introduction
-------------
+============
 
 Documents my personal setup.
 
@@ -70,9 +70,14 @@ but it will likely be faster just restarting instead of micro-managing services 
 
 https://www.mankier.com/1/needs-restarting
 
+Install prefered Terminal and Shell
+===================================
+
+This topic has its own page:
+https://github.com/TorbenJakobsen/setup_terminal_and_shell.
+
 install :code:`ansible`
 -----------------------
-
 
 https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html
 
