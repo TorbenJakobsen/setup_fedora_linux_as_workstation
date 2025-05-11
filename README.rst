@@ -242,4 +242,16 @@ Other packages to consider
 
   sudo dnf5 install tealdeer
 
- 
+
+ https://github.com/Canop/dysk
+
+ duf
+
+
+dysk
+
+https://ostechnix.com/get-linux-filesystems-information-using-dysk/
+
+install rust
+
+https://ostechnix.com/install-rust-programming-language-in-linux/
