@@ -4,10 +4,11 @@
   Set up Fedora Linux as Workstation
 ######################################
 
-Introduction
-============
+****************
+  Introduction
+****************
 
-Documents my personal setup.
+Documents my *personal* setup.
 
 A better way is to use Ansible, and I will get there eventually.
 
@@ -19,24 +20,24 @@ https://github.com/geerlingguy/docker-fedora42-ansible
 is a good place to start.
 
 Initial Housekeeping
---------------------
+====================
 
-Package manager
-~~~~~~~~~~~~~~~~
+Package Manager
+---------------
 
 Use `dnf5` instead of `dnf` (https://www.tecmint.com/dnf-vs-dnf5/)
 as it is a more modern and faster inplementation of :code:`dnf`.
 
 Documentation on `dnf5` commands are available here: https://dnf5.readthedocs.io/en/latest/commands/index.html
 
-Initial update
-~~~~~~~~~~~~~~
+Initial Update
+--------------
 
 .. note:: 
 
   Make sure you have a network connection.
 
-After the build of the installation media many cnanges will likely
+After the build of the installation media many changes will likely
 have been added to your system.
 So a full update is in place.
 Note: If you are used to :code:`apt` and other package managers; 
@@ -64,7 +65,7 @@ but it will likely be faster just restarting instead of micro-managing services 
 
 .. code:: bash
 
-  sudo dnf5 -y dnf-utils
+  sudo dnf5 install -y dnf-utils
 
   dnf5 needs-restarting
 
@@ -136,8 +137,8 @@ https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-dis
 
 .. code:: bash 
 
-  dnf check-update
-  sudo dnf install code
+  sudo dnf5 check-update
+  sudo dnf5 install code
 
 The general guide is here:
 https://code.visualstudio.com/docs/setup/linux
@@ -154,6 +155,11 @@ Examples:
   code --list-extensions
   code --install-extension redhat.vscode-yaml
   code --uninstall-extension timonwong.shellcheck
+
+.. code:: text
+
+  catppuccin.catppuccin-vsc
+  catppuccin.catppuccin-vsc-icons
 
 My personal preferences are:
 
@@ -216,6 +222,7 @@ My personal preferences are:
   wholroyd.jinja
 
 
+
 Install Docker
 --------------
 
@@ -255,3 +262,10 @@ https://ostechnix.com/get-linux-filesystems-information-using-dysk/
 install rust
 
 https://ostechnix.com/install-rust-programming-language-in-linux/
+
+
+zig
+
+.. code:: bash
+  
+  grub2-mkconfig -o /boot/grub2/grub.cfg
