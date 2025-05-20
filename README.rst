@@ -40,8 +40,11 @@ Initial Update
 After the build of the installation media many changes will likely
 have been added to your system.
 So a full update is in place.
-Note: If you are used to :code:`apt` and other package managers; 
-:code:`dnf5 update` and :code:`dnf5 upgrade` does the same update.
+
+..note::
+
+  If you are used to :code:`apt` and other package managers; 
+  :code:`dnf5 update` and :code:`dnf5 upgrade` does the same.
 
 .. code:: bash
 
@@ -60,12 +63,14 @@ You can check available update packages beforehand:
   dnf5 check-update
 
 Depending on your updates you should restart the system.
-Strictly you could probaly get away with restarting some sub-systems,
+Strictly you could probably get away with restarting some sub-systems,
 but it will likely be faster just restarting instead of micro-managing services and daemons.
 
 .. code:: bash
 
   sudo dnf5 install -y dnf-utils
+
+.. code:: bash
 
   dnf5 needs-restarting
 
@@ -90,10 +95,10 @@ install the full package:
 
 It is also possible to install just the core and modules of your choosing.
 
-:code:`ssh`` Keys
+:code:`ssh` Keys
 -----------------
 
-To access :ode:`git` you will need a public key.
+To access :code:`git` you will need a public key.
 
 Install :code:`gìt`
 -------------------
@@ -111,19 +116,21 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generati
   git config --global user.name "Your Name"
   git config --global init.defaultBranch "main"
 
-Depending on your preferences. 
-Personally I like :code:`code` to open. You may prefer :code:`vim` or the default.
+*Depending on your preferences*. 
+Personally I like :code:`code` to open. 
+You may prefer :code:`vi`, :code:`vim`, :code:`neovim`, or the default.
 
 .. code:: bash
 
   git config --global core.editor "code --wait"
 
-Optionally install public key in GitHub
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Recommended: Optionally install public key in GitHub
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 I use GitHub and other services and have other servers that I want to access.
 
-To install public key in GitHub follow ...
+To install public key in GitHub follow:
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?tool=webuing-a-new-ssh-key-to-your-github-account?tool=webui
 
 Install Visual Studio Code
 --------------------------
@@ -133,15 +140,23 @@ https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-dis
 .. code:: bash 
 
   sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+
+.. code:: bash 
+
   echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
+
+Now install :code:`code`:
 
 .. code:: bash 
 
   sudo dnf5 check-update
+
+.. code:: bash 
+
   sudo dnf5 install code
 
 The general guide is here:
-https://code.visualstudio.com/docs/setup/linux
+<https://code.visualstudio.com/docs/setup/linux>
 
 Install :code:`code` Extensions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -156,10 +171,12 @@ Examples:
   code --install-extension redhat.vscode-yaml
   code --uninstall-extension timonwong.shellcheck
 
-.. code:: text
+My personal choice of themeis:
 
-  catppuccin.catppuccin-vsc
-  catppuccin.catppuccin-vsc-icons
+.. code:: bash
+
+  code --install-extension catppuccin.catppuccin-vsc        \
+  code --install-extension catppuccin.catppuccin-vsc-icons
 
 My personal preferences are:
 
@@ -221,8 +238,6 @@ My personal preferences are:
   wesbos.theme-cobalt2
   wholroyd.jinja
 
-
-
 Install Docker
 --------------
 
@@ -232,12 +247,22 @@ https://docs.docker.com/engine/install/fedora/
 The general installation:
 https://docs.docker.com/engine/install/
 
-Setup `zsh` as default shell
-----------------------------
 
-Configure omz
+A CLI alternative to Docker Desktop is :code:`lazydocker`.
 
-Configure shell prompt
+.. note::
+
+  To have docker running you need the engine running...
+
+Install :code:`podman`  
+----------------------
+
+Install and configure default shell and Terminal
+------------------------------------------------
+
+See
+<https://github.com/TorbenJakobsen/setup_terminal_and_shell>
+for how to configure :code:`zsh` as default shell and more.
 
 Other packages to consider
 --------------------------
@@ -250,10 +275,14 @@ Other packages to consider
   sudo dnf5 install tealdeer
 
 
- https://github.com/Canop/dysk
+duf
 
- duf
+.. code:: bash 
 
+  sudo dnf5 install duf
+
+
+https://github.com/Canop/dysk
 
 dysk
 
@@ -263,8 +292,10 @@ install rust
 
 https://ostechnix.com/install-rust-programming-language-in-linux/
 
-
 zig
+
+Boot Manager
+============
 
 .. code:: bash
   
