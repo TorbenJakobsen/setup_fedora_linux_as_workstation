@@ -30,6 +30,24 @@ as it is a more modern and faster inplementation of :code:`dnf`.
 
 Documentation on `dnf5` commands are available here: https://dnf5.readthedocs.io/en/latest/commands/index.html
 
+Configure dnf
+-------------
+
+Improve download speed.
+
+.. code: bash
+
+  sudo nano /etc/dnf/dnf.conf
+
+Do note that you will potentionally affect other downloads and users on the same network.
+
+.. code: text
+
+  [main]
+
+  max_parallel_downloads=10
+  fastestmirror=true
+
 Initial Update
 --------------
 
@@ -39,7 +57,7 @@ Initial Update
 
 After the build of the installation media many changes will likely
 have been added to your system.
-So a full update is in place.
+So a full update is in order.
 
 ..note::
 
@@ -76,6 +94,86 @@ but it will likely be faster just restarting instead of micro-managing services 
 
 https://www.mankier.com/1/needs-restarting
 
+Third-party repositories
+------------------------
+
+Open Software Center and add
+
+EPEL (Extra Packages for Enterprise Linux)
+------------------------------------------
+
+See https://idroot.us/install-epel-repository-fedora-42/
+
+  A common misconception among Linux users new to Fedora is that EPEL repositories are necessary or beneficial for Fedora systems. 
+  In reality, Fedora already contains virtually all packages found in EPEL — and often newer versions. 
+  This situation exists because EPEL packages originate from Fedora before being adapted for Enterprise Linux distributions.
+
+  Installing EPEL on Fedora 42 is generally unnecessary and potentially problematic. 
+  Since Fedora serves as the upstream source for EPEL packages, 
+  adding EPEL to Fedora creates a circular relationship that could lead to package conflicts or dependency issues. 
+  Most software needs are already met through Fedora’s extensive default repositories.
+
+https://docs.fedoraproject.org/en-US/epel/
+
+COPR (Cool Other Package Repo) 
+------------------------------
+
+See https://idroot.us/install-packages-copr-repositories-fedora/
+
+.. code:: bash
+
+  sudo dnf5 install dnf-plugins-core
+
+.. code:: bash
+
+  dnf5 copr --help
+
+RPMFusion
+---------
+
+Enable RPMFusion repositories for Fedora.
+
+  RPM Fusion provides software that the Fedora Project or Red Hat doesn't want to ship. 
+  That software is provided as precompiled RPMs for all current Fedora versions and current
+  Red Hat Enterprise Linux or clones versions; 
+  you can use the RPM Fusion repositories with tools like yum and PackageKit. 
+
+  RPM Fusion is a merger of Dribble, Freshrpms, and Livna; our goal is to simplify end-user experience by grouping as much add-on software as possible in a single location. Also see our FoundingPrinciples. 
+
+An example is Nvidia drivers.
+
+Free
+
+.. code:: bash
+
+  sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+
+Non-free.
+
+.. code:: bash
+
+  sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+.. code:: bash
+
+  sudo dnf upgrade --refresh
+
+Install Firmware Updates
+------------------------
+
+.. code:: bash
+
+  sudo fwupdmgr refresh --force
+
+.. code:: bash
+
+  sudo fwupdmgr get-updates
+
+.. code:: bash
+
+  sudo fwupmgr update
+
+
 Install prefered Terminal and Shell
 ===================================
 
@@ -107,14 +205,15 @@ Install :code:`gìt`
 
   sudo dnf5 install git
 
-Follow:
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+Follow: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 .. code:: bash
 
-  git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
+  git config --global user.email "TorbenJakobsen@users.noreply.github.com"
+  git config --global user.name "Torben Jakobsen"
   git config --global init.defaultBranch "main"
+
+Of course you should use **your** name and and mail address.
 
 *Depending on your preferences*. 
 Personally I like :code:`code` to open. 
