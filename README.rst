@@ -128,6 +128,12 @@ See https://idroot.us/install-packages-copr-repositories-fedora/
 
   dnf5 copr --help
 
+Example: COPR is used to install ghostty.
+
+.. code:: bash
+
+  sudo dnf5 copr enable pgdev/ghostty
+
 RPMFusion
 ---------
 
@@ -372,7 +378,6 @@ Other packages to consider
 .. code:: bash 
 
   sudo dnf5 install tealdeer
-
 
 duf
 
