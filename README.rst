@@ -48,6 +48,9 @@ Do note that you will potentionally affect other downloads and users on the same
   max_parallel_downloads=10
   fastestmirror=true
 
+This will potentionally speed up your downloads by concurrently downloading
+more updates, but to the potential detriment of all other users on your network.
+
 Initial Update
 --------------
 
@@ -152,17 +155,17 @@ Free
 
 .. code:: bash
 
-  sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+  sudo dnf5 install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
 Non-free.
 
 .. code:: bash
 
-  sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+  sudo dnf5 install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 .. code:: bash
 
-  sudo dnf upgrade --refresh
+  sudo dnf5 upgrade --refresh
 
 Install Firmware Updates
 ------------------------
@@ -219,7 +222,7 @@ Follow: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/
   git config --global user.name "Torben Jakobsen"
   git config --global init.defaultBranch "main"
 
-Of course you should use **your** name and and mail address.
+Of course you should use **your** name and and email address.
 
 *Depending on your preferences*. 
 Personally I like :code:`code` to open. 
