@@ -35,13 +35,13 @@ Configure dnf
 
 Improve download speed.
 
-.. code: bash
+.. code:: bash
 
   sudo nano /etc/dnf/dnf.conf
 
 Do note that you will potentionally affect other downloads and users on the same network.
 
-.. code: text
+.. code:: text
 
   [main]
 
@@ -59,7 +59,7 @@ After the build of the installation media many changes will likely
 have been added to your system.
 So a full update is in order.
 
-..note::
+.. note::
 
   If you are used to :code:`apt` and other package managers; 
   :code:`dnf5 update` and :code:`dnf5 upgrade` does the same.
@@ -97,10 +97,10 @@ https://www.mankier.com/1/needs-restarting
 Third-party repositories
 ------------------------
 
-Open Software Center and add
+Open Software Center and *optionally* add extra repositories.
 
-EPEL (Extra Packages for Enterprise Linux)
-------------------------------------------
+EPEL (Extra Packages for Enterprise Linux) - NO
+-----------------------------------------------
 
 See https://idroot.us/install-epel-repository-fedora-42/
 
@@ -115,8 +115,8 @@ See https://idroot.us/install-epel-repository-fedora-42/
 
 https://docs.fedoraproject.org/en-US/epel/
 
-COPR (Cool Other Package Repo) 
-------------------------------
+COPR (Cool Other Package Repo) - YES
+------------------------------------
 
 See https://idroot.us/install-packages-copr-repositories-fedora/
 
