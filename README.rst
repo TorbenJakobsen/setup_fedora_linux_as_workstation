@@ -14,6 +14,7 @@ A better way is to use Ansible, and I will get there eventually.
 
 | Currently I am using Fedora 42 with Cosmic_ desktop. 
 | **Note**: Cosmic_ is currently (2025-06-24) in alfa 7, but for my use performs fast with only minor hiccups.
+| 
 
 If you want to run in a container then 
 https://github.com/geerlingguy/docker-fedora42-ansible
