@@ -29,7 +29,7 @@ Package Manager
 Use :code:`dnf5` instead of :code:`dnf` (`dnf-vs-dnf5 <https://www.tecmint.com/dnf-vs-dnf5/>`__)
 as it is a more modern and faster inplementation of :code:`dnf`.
 
-Documentation on :code:`dnf5` commands are available here: https://dnf5.readthedocs.io/en/latest/commands/index.html
+Documentation on :code:`dnf5` commands are available `here <https://dnf5.readthedocs.io/en/latest/commands/index.html>`__.
 
 Configure :code:`dnf` (:code:`dnf5`)
 ------------------------------------
