@@ -13,7 +13,7 @@ Documents my *personal* setup.
 A better way is to use Ansible, and I will get there eventually.
 
 | Currently I am using Fedora 42 with Cosmic_ desktop. 
-| **Note**: Cosmic_ is currently (2025-04-29) in alfa 7, but for my use performs fast with only minor hiccups.
+| **Note**: Cosmic_ is currently (2025-06-24) in alfa 7, but for my use performs fast with only minor hiccups.
 
 If you want to run in a container then 
 https://github.com/geerlingguy/docker-fedora42-ansible
@@ -30,8 +30,8 @@ as it is a more modern and faster inplementation of :code:`dnf`.
 
 Documentation on `dnf5` commands are available here: https://dnf5.readthedocs.io/en/latest/commands/index.html
 
-Configure dnf
--------------
+Configure :code:`dnf` (:code:`dnf5`)
+------------------------------------
 
 Improve download speed.
 
@@ -49,8 +49,13 @@ Do note that you will potentionally affect other downloads and users on the same
   fastestmirror=true
 
 This will potentionally speed up your downloads by concurrently downloading
-more updates, but to the potential detriment of all other users on your network.
+:code:`10` instead of the default :code:`3` updates, 
+but to the potential detriment of all other users on your network.
 
+.. image:: ./media/dnf_update_x10.dnf 
+  :align: left
+  :width: 640 px
+ 
 Initial Update
 --------------
 
@@ -170,6 +175,8 @@ Non-free.
 Install Firmware Updates
 ------------------------
 
+In my opinion faster and more updates than using Windows.
+
 .. code:: bash
 
   sudo fwupdmgr refresh --force
@@ -180,7 +187,7 @@ Install Firmware Updates
 
 .. code:: bash
 
-  sudo fwupmgr update
+  sudo fwupdmgr update
 
 
 Install prefered Terminal and Shell
