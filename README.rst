@@ -245,8 +245,8 @@ Recommended: Optionally install public key in GitHub
 
 I use GitHub and other services and have other servers that I want to access.
 
-To install public key in GitHub follow:
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?tool=webuing-a-new-ssh-key-to-your-github-account?tool=webui
+To install public key in GitHub follow the
+`docs <https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?tool=webuing-a-new-ssh-key-to-your-github-account?tool=webui>`__.
 
 Install Visual Studio Code
 --------------------------
