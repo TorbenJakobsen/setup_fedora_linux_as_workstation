@@ -53,7 +53,7 @@ This will potentionally speed up your downloads by concurrently downloading
 :code:`10` instead of the default :code:`3` updates, 
 but to the potential detriment of all other users on your network.
 
-.. image:: ./media/dnf_update_x10.dnf 
+.. image:: ./media/dnf_update_x10.png
   :align: left
   :width: 640 px
  
