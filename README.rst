@@ -81,7 +81,7 @@ So a full update is in order.
 
   sudo dnf5 makecache
 
-The `dnf5 makecache` command creates and downloads metadata for enabled repositories.
+The :code:`dnf5 makecache` command creates and downloads metadata for enabled repositories.
 
 You can check available update packages beforehand:
 
