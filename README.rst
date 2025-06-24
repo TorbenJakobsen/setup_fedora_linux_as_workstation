@@ -55,7 +55,7 @@ but to the potential detriment of all other users on your network.
 
 .. image:: ./media/dnf_update_x10.png
   :align: left
-  :width: 640 px
+  :width: 800 px
  
 Initial Update
 --------------
