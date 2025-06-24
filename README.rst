@@ -35,18 +35,21 @@ Configure dnf
 
 Improve download speed.
 
-.. code: bash
+.. code:: bash
 
   sudo nano /etc/dnf/dnf.conf
 
 Do note that you will potentionally affect other downloads and users on the same network.
 
-.. code: text
+.. code:: text
 
   [main]
 
   max_parallel_downloads=10
   fastestmirror=true
+
+This will potentionally speed up your downloads by concurrently downloading
+more updates, but to the potential detriment of all other users on your network.
 
 Initial Update
 --------------
@@ -59,7 +62,7 @@ After the build of the installation media many changes will likely
 have been added to your system.
 So a full update is in order.
 
-..note::
+.. note::
 
   If you are used to :code:`apt` and other package managers; 
   :code:`dnf5 update` and :code:`dnf5 upgrade` does the same.
@@ -97,10 +100,10 @@ https://www.mankier.com/1/needs-restarting
 Third-party repositories
 ------------------------
 
-Open Software Center and add
+Open Software Center and *optionally* add extra repositories.
 
-EPEL (Extra Packages for Enterprise Linux)
-------------------------------------------
+EPEL (Extra Packages for Enterprise Linux) - NO
+-----------------------------------------------
 
 See https://idroot.us/install-epel-repository-fedora-42/
 
@@ -115,8 +118,8 @@ See https://idroot.us/install-epel-repository-fedora-42/
 
 https://docs.fedoraproject.org/en-US/epel/
 
-COPR (Cool Other Package Repo) 
-------------------------------
+COPR (Cool Other Package Repo) - YES
+------------------------------------
 
 See https://idroot.us/install-packages-copr-repositories-fedora/
 
@@ -152,17 +155,17 @@ Free
 
 .. code:: bash
 
-  sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+  sudo dnf5 install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
 Non-free.
 
 .. code:: bash
 
-  sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+  sudo dnf5 install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 .. code:: bash
 
-  sudo dnf upgrade --refresh
+  sudo dnf5 upgrade --refresh
 
 Install Firmware Updates
 ------------------------
@@ -219,7 +222,7 @@ Follow: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/
   git config --global user.name "Torben Jakobsen"
   git config --global init.defaultBranch "main"
 
-Of course you should use **your** name and and mail address.
+Of course you should use **your** name and and email address.
 
 *Depending on your preferences*. 
 Personally I like :code:`code` to open. 
