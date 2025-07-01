@@ -176,7 +176,9 @@ Non-free.
 Install Firmware Updates
 ------------------------
 
-In my opinion faster and more updates than using Windows.
+| In my opinion faster and more updates than using Windows.
+| See https://github.com/fwupd/fwupd
+
 
 .. code:: bash
 
