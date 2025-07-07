@@ -411,6 +411,10 @@ https://ostechnix.com/install-rust-programming-language-in-linux/
 
 zig
 
+FUSE
+
+  https://github.com/appimage/appimagekit/wiki/fuse
+
 Boot Manager
 ============
 
