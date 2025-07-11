@@ -415,6 +415,13 @@ FUSE
 
   https://github.com/appimage/appimagekit/wiki/fuse
 
+gcc + c linker
+
+.. code:: bash 
+
+  sudo dnf5 gcc
+
+
 Boot Manager
 ============
 
