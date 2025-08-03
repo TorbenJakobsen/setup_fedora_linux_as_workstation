@@ -29,9 +29,12 @@ Additionally there some common components and setup.
 - `Setup Terminal and Shell <https://github.com/TorbenJakobsen/setup_terminal_and_shell/>`__ 
 - `Setup Visual Studio Code <https://github.com/TorbenJakobsen/setup_visual_studio_code/>`__ 
 
-I also have a utility to syncronize and 
+I also have a crude utility to syncronize and 
 `manage GitHub repositories <https://github.com/TorbenJakobsen/manage_github_repos/>`__
-with these notes.
+with these notes sufficeint for my personal needs.
+
+We are all different with different knowledge and foundation,
+so I appologize in advance if steps are missing or skipped.
 
 ****************
   Introduction
