@@ -8,9 +8,19 @@
   Preamble
 ************
 
-| This is part of multiple documents about my *personal* setup.
-| I use multiple Linux and BSD distributions. Some are used as desktops or servers or as virtual machines. 
-  Each has a flavour and tweaks I will document.
+The preamble is mostly universal for the repositories linked herein.
+
+This is part of multiple notes about my *personal* setup of various Linux and BSD distributions. 
+Some are used as desktops or servers or as virtual machines and containers. 
+Each has a flavour and tweaks I will document in these lab notes.
+
+- `Setup CentOS Linux as Server <https://github.com/TorbenJakobsen/setup_centos_linux_as_server/>`__
+- `Setup Debian Linux as Server <https://github.com/TorbenJakobsen/setup_debian_linux_as_server/>`__
+- `Setup Debian Linux as Workstation <https://github.com/TorbenJakobsen/setup_debian_linux_as_workstation/>`__
+- `Setup Fedora Linux as Workstation <https://github.com/TorbenJakobsen/setup_fedora_linux_as_workstation/>`__
+- `Setup FreeBSD as Workstationm <https://github.com/TorbenJakobsen/setup_freebsd_as_workstation/>`__
+- `Setup macOS as Workstation <https://github.com/TorbenJakobsen/setup_macos_as_workstation/>`__
+- `Setup Proxmox as Hypervisor <https://github.com/TorbenJakobsen/setup_proxmox_as_hypervisor/>`__
 
 Additionally there some common components and setup.
 
@@ -18,13 +28,17 @@ Additionally there some common components and setup.
 - `Setup Terminal and Shell <https://github.com/TorbenJakobsen/setup_terminal_and_shell/>`__ 
 - `Setup Visual Studio Code <https://github.com/TorbenJakobsen/setup_visual_studio_code/>`__ 
 
+I also have a utility to syncronize and 
+`manage GitHub repositories <https://github.com/TorbenJakobsen/manage_github_repos/>`__
+with these notes.
+
 ****************
   Introduction
 ****************
 
-Documents my *personal* setup.
-
-A better way is to use Ansible, and I will get there eventually.
+A definite better way than manual steps
+is to use `Ansible <https://www.redhat.com/en/ansible-collaborative/>`__ (or similar),
+and I will get there eventually.
 
 | Currently I am using Fedora 42 with Cosmic_ desktop. 
 | **Note**: Cosmic_ is currently (2025-06-24) in alfa 7, but for my use performs fast with only minor hiccups.
@@ -84,7 +98,7 @@ So a full update is in order.
 
 .. note::
 
-  If you are used to :code:`apt` and other package managers; 
+  If you are used to :code:`apt` (Debian) and other package managers; 
   :code:`dnf5 update` and :code:`dnf5 upgrade` does the same.
 
 .. code:: bash
@@ -103,9 +117,18 @@ You can check available update packages beforehand:
 
   dnf5 check-update
 
+or with identical behaviour
+
+.. code:: bash
+
+  dnf5 check-upgrade
+
 Depending on your updates you should restart the system.
 Strictly you could probably get away with restarting some sub-systems,
-but it will likely be faster just restarting instead of micro-managing services and daemons.
+but it will likely be simpler and faster just restarting instead of 
+micro-managing services and daemons.
+
+To actually check if you nee to restart you can install the ``needs-restarting`` plugin.
 
 .. code:: bash
 
@@ -115,7 +138,7 @@ but it will likely be faster just restarting instead of micro-managing services 
 
   dnf5 needs-restarting
 
-https://www.mankier.com/1/needs-restarting
+See the `man <https://www.mankier.com/1/needs-restarting>`__ pages.
 
 Third-party repositories
 ------------------------
