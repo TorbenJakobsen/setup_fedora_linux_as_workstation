@@ -4,7 +4,19 @@
   Set up Fedora Linux as Workstation
 ######################################
 
-.. include:: preamble.rst
+************
+  Preamble
+************
+
+| This is part of multiple documents about my *personal* setup.
+| I use multiple Linux and BSD distributions. Some are used as desktops or servers or as virtual machines. 
+  Each has a flavour and tweaks I will document.
+
+Additionally there some common components and setup.
+
+- `Manage configuration with GNU stow <https://github.com/TorbenJakobsen/manage_configuration_with_stow/>`__ 
+- `Setup Terminal and Shell <https://github.com/TorbenJakobsen/setup_terminal_and_shell/>`__ 
+- `Setup Visual Studio Code <https://github.com/TorbenJakobsen/setup_visual_studio_code/>`__ 
 
 ****************
   Introduction
