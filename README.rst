@@ -4,6 +4,8 @@
   Set up Fedora Linux as Workstation
 ######################################
 
+.. include:: preamble.rst
+
 ****************
   Introduction
 ****************
