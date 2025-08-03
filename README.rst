@@ -1,4 +1,5 @@
 .. _Cosmic: https://system76.com/cosmic/
+.. _`Ansible: https://www.ansible.com/
 
 ######################################
   Set up Fedora Linux as Workstation
@@ -37,14 +38,16 @@ with these notes.
 ****************
 
 A definite better way than manual steps
-is to use `Ansible <https://www.redhat.com/en/ansible-collaborative/>`__ (or similar),
+is to use Ansible_  (or similar),
 and I will get there eventually.
 
-| Currently I am using Fedora 42 with Cosmic_ desktop. 
-| **Note**: Cosmic_ is currently (2025-06-24) in alfa 7, but for my use performs fast with only minor hiccups.
-| 
+Currently I am using Fedora 42 with Cosmic_ desktop. 
 
-If you want to run in a container then 
+.. note::
+  Cosmic_ is currently (2025-08-03) in alfa 7, but for my use performs fast and stable with only minor hiccups.
+
+If you want to run Fedora in a container then 
+Jeff Geerling's 
 https://github.com/geerlingguy/docker-fedora42-ansible
 is a good place to start.
 
@@ -54,7 +57,7 @@ Initial Housekeeping
 Package Manager
 ---------------
 
-Use :code:`dnf5` instead of :code:`dnf` (`dnf-vs-dnf5 <https://www.tecmint.com/dnf-vs-dnf5/>`__)
+Use :code:`dnf5` instead of :code:`dnf` (see `dnf-vs-dnf5 <https://www.tecmint.com/dnf-vs-dnf5/>`__)
 as it is a more modern and faster inplementation of :code:`dnf`.
 
 Documentation on :code:`dnf5` commands are available `here <https://dnf5.readthedocs.io/en/latest/commands/index.html>`__.
