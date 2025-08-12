@@ -1,5 +1,5 @@
 .. _Cosmic: https://system76.com/cosmic/
-.. _`Ansible: https://www.ansible.com/
+.. _Ansible: https://www.ansible.com/
 
 ######################################
   Set up Fedora Linux as Workstation
@@ -22,10 +22,12 @@ Each has a flavour and tweaks I will document in these lab notes.
 - `Setup FreeBSD as Workstationm <https://github.com/TorbenJakobsen/setup_freebsd_as_workstation/>`__
 - `Setup macOS as Workstation <https://github.com/TorbenJakobsen/setup_macos_as_workstation/>`__
 - `Setup Proxmox as Hypervisor <https://github.com/TorbenJakobsen/setup_proxmox_as_hypervisor/>`__
+- `Setup Windows 11 as Workstation <https://github.com/TorbenJakobsen/setup_windows_11_as_workstation/>`__
 
 Additionally there some common components and setup.
 
 - `Manage configuration with GNU stow <https://github.com/TorbenJakobsen/manage_configuration_with_stow/>`__ 
+- `Setup Python for Development <https://github.com/TorbenJakobsen/setup_python_for_development/>`__ 
 - `Setup Terminal and Shell <https://github.com/TorbenJakobsen/setup_terminal_and_shell/>`__ 
 - `Setup Visual Studio Code <https://github.com/TorbenJakobsen/setup_visual_studio_code/>`__ 
 
@@ -47,7 +49,7 @@ and I will get there eventually.
 Currently I am using Fedora 42 with Cosmic_ desktop. 
 
 .. note::
-  Cosmic_ is currently (2025-08-03) in alfa 7, but for my use performs fast and stable with only minor hiccups.
+  Cosmic_ is currently (2025-08-12) in Alfa 7, but for my use performs fast and stable with only minor hiccups.
 
 If you want to run Fedora in a container then 
 Jeff Geerling's 
