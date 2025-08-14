@@ -33,7 +33,7 @@ Additionally there some common components and setup.
 
 I also have a crude utility to syncronize and 
 `manage GitHub repositories <https://github.com/TorbenJakobsen/manage_github_repos/>`__
-with these notes sufficeint for my personal needs.
+with these notes sufficient for my personal needs.
 
 We are all different with different knowledge and foundation,
 so I appologize in advance if steps are missing or skipped.
@@ -81,7 +81,6 @@ Do note that you will potentionally affect other downloads and users on the same
 .. code:: text
 
   [main]
-
   max_parallel_downloads=10
   fastestmirror=true
 
@@ -241,7 +240,7 @@ Install prefered Terminal and Shell
 ===================================
 
 This topic has its own page:
-https://github.com/TorbenJakobsen/setup_terminal_and_shell.
+`Setup Terminal and Shell <https://github.com/TorbenJakobsen/setup_terminal_and_shell/>`__.
 
 install :code:`ansible`
 -----------------------
